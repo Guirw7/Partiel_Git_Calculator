@@ -1,10 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculette JS</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<main class="app">
+    <section class="calculator" aria-label="Calculette">
+        <div class="display" role="group" aria-label="Écran">
+            <div class="history" id="history" aria-live="polite"></div>
+            <div class="screen" id="screen" aria-live="polite">0</div>
+        </div>
 
+        <div class="keys" role="group" aria-label="Touches">
+            <button class="key key--fn" data-action="clear">C</button>
+            <button class="key key--fn" data-action="backspace">←</button>
+            <button class="key key--op" data-op="*">×</button>
+            <button class="key key--op" data-op="-">−</button>
+
+            <button class="key" data-digit="7">7</button>
+            <button class="key" data-digit="8">8</button>
+            <button class="key" data-digit="9">9</button>
+            <button class="key key--op" data-op="+">+</button>
+
+            <button class="key" data-digit="4">4</button>
+            <button class="key" data-digit="5">5</button>
+            <button class="key" data-digit="6">6</button>
+
+            <button class="key" data-digit="1">1</button>
+            <button class="key" data-digit="2">2</button>
+            <button class="key" data-digit="3">3</button>
+            <button class="key key--eq" data-action="equals">=</button>
+
+            <button class="key key--wide" data-digit="0">0</button>
+            <button class="key" data-digit=".">.</button>
+        </div>
+
+        <p class="hint">
+            Opérations dispo : <strong>+</strong>, <strong>−</strong>, <strong>×</strong>
+        </p>
+    </section>
+</main>
+
+<script src="calculator.js"></script>
 </body>
 </html>
