@@ -7,7 +7,7 @@
     const keys = document.querySelector(".keys");
 
     // --- Opérations : à compléter via branches feature ---
-    function add(a, b) { throw new Error("ADD_NOT_IMPLEMENTED"); }
+    function add(a, b) { return a + b; }
     function sub(a, b) { throw new Error("SUB_NOT_IMPLEMENTED"); }
     function mul(a, b) { throw new Error("MUL_NOT_IMPLEMENTED"); }
 
