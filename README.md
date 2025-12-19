@@ -2,4 +2,5 @@
 
 ## Fonctionnalités :
 
-- [x] Addition (develop)
+- [x] Addition (feature/addition)
+- [x] Soustraction (feature/substraction)
