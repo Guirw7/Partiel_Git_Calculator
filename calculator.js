@@ -9,7 +9,7 @@
     // --- Opérations : à compléter via branches feature ---
     function add(a, b) { return a + b; }
     function sub(a, b) { return a - b; }
-    function mul(a, b) { throw new Error("MUL_NOT_IMPLEMENTED"); }
+    function mul(a, b) { return a * b; }
 
     function compute(a, op, b) {
         if (op === "+") return add(a, b);
